@@ -1,0 +1,90 @@
+<?php
+	include('../config.php');
+	include('handlers/upload-handler.php');
+    
+    $success = mysqli_query($con,$registerQueryDetails);
+	$success1 = mysqli_query($con,$registerQueryCoordinates);
+	$c_count = mysqli_num_rows($success);
+
+?>
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Safe Space</title>
+
+</head>
+<body background="C:\xamp\htdocs\Hackathon\assets\images\city1.jpg">
+
+	
+	<center>
+		<div class="uploadzone">
+			<font size="100px"> UPLOAD ZONE </font>
+			
+			<form method="post">
+				<p class="content">
+				Choose File
+				<input type="file" name="ufile">
+
+				<script type="text/javascript">
+						function show(){
+
+						if(document.getElementById('ufile').value == -999)
+							document.getElementById("other").style.display="block";
+
+					}
+					</script>
+					<input type="file" name="other" id="other" style="display: none; margin-top: 5px;">
+
+
+			
+			<br><br>
+				<button type="submit" name="submit" class="button btn-light btn-lg">UPLOAD</button>
+			</p>
+		</form>
+	</div>
+
+</body>
+</html>
+
+<style type="text/css">
+	*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../assets/images/city1.jpg');
+	color: white;
+	background-size: cover;
+	background-position: top;
+}
+
+.uploadzone {
+
+	padding: 100px 100px;
+	float: center;
+	text-align: center;
+}
+
+.button {
+	width: 200px;
+	border:white;
+	background-color: transparent;
+	color: white;
+	
+}
+
+.button:hover{
+	background-color: white;
+	color: black;
+	padding: 5px 1px;
+}
+
+.content{
+	margin-top: 10%;
+	font-size: 30px;
+}
+</style>
