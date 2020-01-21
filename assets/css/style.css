@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/city1.jpg');
+	color: white;
+	background-size: cover;
+	background-position: top;
+}
+
+
+.home {
+	float: left;
+}
+.loginzone {
+
+	padding: 10px 10px;
+	border: 2px solid white;
+	border-radius: 10%;
+	float: right;
+	text-align: center;
+
+}
+.button {
+	width: 200px;
+	border:white;
+	background-color: transparent;
+	color: white;
+}
+
+.button:hover{
+	background-color: white;
+	color: black;
+	padding: 5px 5px;
+}
