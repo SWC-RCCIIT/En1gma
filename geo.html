@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="geo.css">
+  <title>Location finder</title>
+  <script>
+function locate() {
+  const posStatus = document.querySelector('#posStatus');
+  const locInfo = document.querySelector('#locInfo');
+  posStatus.innerHTML = 'Locating...'
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition((position) => {
+      const lat = position.coords.latitude;
+      const long = position.coords.longitude;
+      posStatus.innerHTML = "Location";
+
+      locInfo.innerHTML = `Latitude: ${lat}, Longitude: ${long}`;
+    });
+  }
+};
+  </script>
+</head>
+
+<body>
+  <button onclick="locate();">Get Location</button>
+  <h1 id="posStatus"></h1>
+  <a id="locInfo" target="#"></a>
+</body>
+
+</html>

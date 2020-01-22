@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('city1.jpg');
+  color: white;
+  background-size: cover;
+  background-position: top;
+
+}
+
+.body{
+  width: 1140px;
+  margin: 10px auto;
+}
+
+.header{
+  font-size: 72px;
+  text-align: center;
+}
+
+.subHead{
+  font-size: 24px;
+}
+
+.login{
+  width: 40%;
+  /* border: 2px solid #000; */
+  padding: 15px 0;
+  /* border */
+  text-align: center;
+  margin-top: 10%;
+  margin-left: 30%;
+  font-size: 24px;
+}
+
+/* a{
+  text-decoration: none;
+} */
+
+.register{
+  background-color: transparent;
+  font-style: none;
+  padding: 3px 7px;
+}
+
+.inp{
+  width: 200px;
+  height: 20px;
+  border: 2px solid #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.butt{
+  padding: 3px 7px;
+}

@@ -1,0 +1,39 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+body {
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('city1.jpg');
+	color: white;
+	background-size: cover;
+	background-position: top;
+}
+
+.uploadzone {
+
+	padding: 100px 100px;
+	float: center;
+	text-align: center;
+}
+
+.button {
+	width: 80px;
+	border: white;
+	background-color: transparent;
+	color: white;
+
+}
+
+.button:hover {
+	background-color: white;
+	color: black;
+	padding: 5px 1px;
+}
+
+.content {
+	margin-top: 10%;
+	font-size: 30px;
+}
